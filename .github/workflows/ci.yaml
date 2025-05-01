@@ -52,5 +52,6 @@ docker:
 
       - name: Build Docker image
         run: docker-build -t ${{ secrets.DOCKER.USERNAME }}/automation-test:latest .
+
       - name: Push Docker image
         run: push ${{ secrets.DOCKER.USERNAME }}/automation-test:latest
